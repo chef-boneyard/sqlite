@@ -17,10 +17,18 @@
 # limitations under the License.
 #
 
-package "sqlite3" do
-  action :upgrade
+if platform?('ubuntu', 'debian')
+  package "sqlite3" do
+    action :upgrade
+  end
+
+  package "sqlite3-doc" do
+    action :upgrade
+  end
 end
 
-package "sqlite3-doc" do
-  action :upgrade
+if platform?('centos')
+  package 'sqlite-devel' do
+    action :upgrade
+  end
 end
