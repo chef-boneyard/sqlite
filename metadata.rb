@@ -1,3 +1,4 @@
+name              "sqlite"
 maintainer        "Opscode, Inc."
 maintainer_email  "cookbooks@opscode.com"
 license           "Apache 2.0"
@@ -6,6 +7,6 @@ version           "0.7.1"
 
 recipe "sqlite", "Installs sqlite"
 
-%w{ubuntu debian centos}.each do |os|
+%w{ubuntu debian centos redhat scientific oracle amazon fedora}.each do |os|
   supports os
 end

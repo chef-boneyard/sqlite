@@ -2,7 +2,7 @@
 # Cookbook Name:: sqlite
 # Recipe:: default
 #
-# Copyright 2009, Opscode, Inc.
+# Copyright 2009-2012, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,18 +17,14 @@
 # limitations under the License.
 #
 
-if platform?('ubuntu', 'debian')
-  package "sqlite3" do
-    action :upgrade
-  end
+case node['platform_family']
+when "debian"
 
-  package "sqlite3-doc" do
-    action :upgrade
-  end
-end
+  package "sqlite3"
+  package "sqlite3-doc"
 
-if platform?('centos')
-  package 'sqlite-devel' do
-    action :upgrade
-  end
+when "rhel", "fedora"
+
+  package 'sqlite-devel'
+
 end
