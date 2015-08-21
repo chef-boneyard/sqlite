@@ -10,3 +10,6 @@ recipe 'sqlite', 'Installs sqlite'
 %w(ubuntu debian centos redhat scientific oracle amazon fedora).each do |os|
   supports os
 end
+
+source_url 'https://github.com/opscode-cookbooks/sqlite' if respond_to?(:source_url)
+issues_url 'https://github.com/opscode-cookbooks/sqlite/issues' if respond_to?(:source_url)
