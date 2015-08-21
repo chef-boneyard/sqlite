@@ -9,6 +9,7 @@ Requirements
 ## Platform:
 
 * Debian/Ubuntu
+* RHEL/CentOS
 
 Usage
 =====
