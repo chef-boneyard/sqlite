@@ -1,3 +1,8 @@
+sqlite Cookbook CHANGELOG
+=========================
+This file is used to list changes made in each version of the sqlite cookbook.
+
+
 ## v1.1.0:
 
 * [#2] - Include SQLite 3 development files on debian platforms
