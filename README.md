@@ -1,7 +1,7 @@
 sqlite Cookbook
 ===============
 
-[![Build Status](https://travis-ci.org/opscode-cookbooks/sqlite.svg?branch=master)](https://travis-ci.org/opscode-cookbooks/sqlite)
+[![Build Status](https://travis-ci.org/chef-cookbooks/sqlite.svg?branch=master)](https://travis-ci.org/chef-cookbooks/sqlite)
 [![Cookbook Version](https://img.shields.io/cookbook/v/sqlite.svg)](https://supermarket.chef.io/cookbooks/sqlite)
 
 
