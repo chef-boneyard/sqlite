@@ -12,5 +12,5 @@ recipe 'sqlite::default', 'Installs sqlite'
   supports os
 end
 
-source_url 'https://github.com/opscode-cookbooks/sqlite' if respond_to?(:source_url)
-issues_url 'https://github.com/opscode-cookbooks/sqlite/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/sqlite' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/sqlite/issues' if respond_to?(:issues_url)
