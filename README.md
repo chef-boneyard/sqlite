@@ -7,28 +7,34 @@ sqlite Cookbook
 
 Installs sqlite.
 
+
 Requirements
-============
+------------
+#### Platforms
+- Debian/Ubuntu
+- RHEL/CentOS/Scientific/Amazon/Oracle
 
-## Platform:
+#### Chef
+- Chef 11+
 
-* Debian/Ubuntu
-* RHEL/CentOS
+#### Cookbooks
+- none
+
 
 Usage
-=====
-
+-----
 If you want to store data on a local sql database in a single file,
 use sqlite, and include `recipe[sqlite]`.
 
-License and Author
-==================
 
-- Author:: Joshua Timberman (<joshua@chef.io>)
+License & Authors
+-----------------
 
-```text
-Copyright:: 2009-2015, Chef Software, Inc
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
+**Copyright:** 2008-2015, Chef Software, Inc.
+
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
