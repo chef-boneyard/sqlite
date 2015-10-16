@@ -19,5 +19,4 @@ platforms:
 
 suites:
 - name: default
-  run_list: ["recipe[sqlite]"]
-  attributes: {}
+  run_list: sqlite::default
