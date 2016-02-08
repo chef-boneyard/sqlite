@@ -1,6 +1,9 @@
 # sqlite Cookbook CHANGELOG
 This file is used to list changes made in each version of the sqlite cookbook.
 
+## v1.1.3:
+- Marked as deprecated. See the readme for additional details
+
 ## v1.1.2:
 - Update Kitchen CI config with the latest platforms
 - Add Travis CI config
