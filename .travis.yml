@@ -12,9 +12,10 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=default-ubuntu-1404
   - INSTANCE=default-ubuntu-1204
-  - INSTANCE=default-centos-71
+  - INSTANCE=default-ubuntu-1404
+  - INSTANCE=default-centos-6
+  - INSTANCE=default-centos-7
 
 # Don't `bundle install`
 install: echo "skip bundle install"
@@ -25,6 +26,7 @@ before_script:
   - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
   - eval "$(/opt/chefdk/bin/chef shell-init bash)"
   - /opt/chefdk/embedded/bin/chef gem install kitchen-docker
+  - /opt/chefdk/embedded/bin/chef gem install rubocop -v 0.37
 script:
   - /opt/chefdk/embedded/bin/chef --version
   - /opt/chefdk/embedded/bin/rubocop --version

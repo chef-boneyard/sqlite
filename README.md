@@ -1,38 +1,26 @@
-sqlite Cookbook
-===============
-
-[![Build Status](https://travis-ci.org/chef-cookbooks/sqlite.svg?branch=master)](https://travis-ci.org/chef-cookbooks/sqlite)
-[![Cookbook Version](https://img.shields.io/cookbook/v/sqlite.svg)](https://supermarket.chef.io/cookbooks/sqlite)
-
+# sqlite Cookbook
+[![Build Status](https://travis-ci.org/chef-cookbooks/sqlite.svg?branch=master)](https://travis-ci.org/chef-cookbooks/sqlite) [![Cookbook Version](https://img.shields.io/cookbook/v/sqlite.svg)](https://supermarket.chef.io/cookbooks/sqlite)
 
 Installs sqlite.
 
-
-Requirements
-------------
-#### Platforms
+## Requirements
+### Platforms
 - Debian/Ubuntu
 - RHEL/CentOS/Scientific/Amazon/Oracle
 
-#### Chef
+### Chef
 - Chef 11+
 
-#### Cookbooks
+### Cookbooks
 - none
 
+## Usage
+If you want to store data on a local sql database in a single file, use sqlite, and include `recipe[sqlite]`.
 
-Usage
------
-If you want to store data on a local sql database in a single file,
-use sqlite, and include `recipe[sqlite]`.
+## License & Authors
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-
-License & Authors
------------------
-
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
-
-**Copyright:** 2008-2015, Chef Software, Inc.
+**Copyright:** 2008-2016, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
